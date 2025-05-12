@@ -1,100 +1,172 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enes Akdoğan - Portföy</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enes Akdoğan - Kişisel Web Sitesi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #8B0000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #fff;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #ffe6e6;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #b30000;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ff3333;
+      padding-bottom: 8px;
+      color: #ff4d4d;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .social a {
+      color: #ff4d4d;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #8B0000;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">Hakkımda</a></li>
-        <li><a href="#skills">Yetenekler</a></li>
-        <li><a href="#projects">Projeler</a></li>
-        <li><a href="#contact">İletişim</a></li>
-        <li><button id="theme-toggle">🌙</button></li>
-      </ul>
-    </nav>
-    <h1>Enes Akdoğan</h1>
-    <p>Yazılım Geliştirici • Oyun Tasarımcısı • Dijital İçerik Üreticisi</p>
-  </header>
 
-  <section id="about">
-    <h2>Hakkımda</h2>
-    <p>Ben Enes, 15 yaşındayım ve teknolojiye olan ilgim çok büyük. Yazılım, oyun geliştirme ve dijital içerik üretme gibi alanlarda kendimi geliştirmek istiyorum. Amacım projelerimi dünyaya tanıtarak insanlara faydalı işler ortaya koymak ve sektördeki en iyilerden biri olmak.</p>
-  </section>
+<header>
+  <h1>Enes Akdoğan</h1>
+  <p>Yazılım Geliştirici | Oyun Tasarımcısı | Dijital İçerik Üreticisi</p>
+</header>
 
-  <section id="skills">
-    <h2>Yeteneklerim</h2>
-    <ul class="skills-list">
-      <li>✅ HTML & CSS (Web Tasarımı)</li>
-      <li>✅ JavaScript (Temel & Orta Seviye)</li>
-      <li>✅ Python (Yazılım Geliştirme & Veri İşleme)</li>
-      <li>✅ Unity & C# (Oyun Geliştirme)</li>
-      <li>✅ Blender (3D Modelleme)</li>
-      <li>✅ Photoshop / CapCut / Premiere Pro (Tasarım & Video)</li>
-      <li>✅ Firebase & SQL (Veritabanı Yönetimi)</li>
-      <li>✅ Web Scraping & API Kullanımı</li>
-    </ul>
-  </section>
+<nav>
+  <a href="#hakkimda">Hakkımda</a>
+  <a href="#yetenekler">Yetenekler</a>
+  <a href="#projeler">Projeler</a>
+  <a href="#iletisim">İletişim</a>
+</nav>
 
-  <section id="projects">
-    <h2>Projelerim</h2>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTYzLnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="The Arena RPG" />
-      <h3>The Arena RPG</h3>
-      <p>Roguelike tarzında, piksel sanat stiline sahip bir oyun. Şu anda geliştirme aşamasında ve dört oynanabilir karakter mevcut.</p>
-      <a href="https://en3sdev.itch.io/the-arena-rpg" target="_blank">Oyna</a>
-    </div>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY0LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="ClickVilistaion" />
-      <h3>ClickVilistaion</h3>
-      <p>Strateji tabanlı bir tıklama oyunu. Kendi krallığınızı kurun ve yönetin.</p>
-      <a href="https://en3sdev.itch.io/clickvilistaion" target="_blank">Oyna</a>
-    </div>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY1LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="Little Spy" />
-      <h3>Little Spy</h3>
-      <p>Bir düşman kalesine sızarak çalınan istihbaratı ve teknolojiyi geri alın. Koşma, zıplama, duvar tırmanma ve uçan tekme gibi mekaniklerle dolu bir platform oyunu.</p>
-      <a href="https://en3sdev.itch.io/little-spy" target="_blank">Oyna</a>
-    </div>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY2LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="Wheelhard" />
-      <h3>Wheelhard</h3>
-      <p>Farklı bölgelerdeki tepelerde araç sürerek teslimatlar yapın. Yeni araçlar satın alın, geliştirin ve başarılar kazanın.</p>
-      <a href="https://en3sdev.itch.io/wheelhard" target="_blank">Oyna</a>
-    </div>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY3LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="CALL FOR SPEED" />
-      <h3>CALL FOR SPEED</h3>
-      <p>Tehlikeli bir yolda sonsuzca sürüş yapın. Birçok biyomdan geçin ve yolunuzu kapatan tüm araçlardan kaçının!</p>
-      <a href="https://en3sdev.itch.io/call-for-speed" target="_blank">Oyna</a>
-    </div>
-    <div class="project">
-      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY4LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="Floaty Astronaut" />
-      <h3>Floaty Astronaut</h3>
-      <p>Flappy Bird'den ilham alınarak geliştirilen bu oyunda, bir astronot olarak uzayın derinliklerinde engelleri aşın.</p>
-      <a href="https://en3sdev.itch.io/floaty-astro" target="_blank">Oyna</a>
-    </div>
-    <!-- Diğer projeler aynı formatta eklenebilir -->
-  </section>
+<section id="hakkimda">
+  <h2>Hakkımda</h2>
+  <p>Ben <span class="highlight">Enes</span>, 15 yaşındayım ve teknolojiye karşı büyük bir tutkum var. Küçüklüğümden beri bilgisayar ve internet dünyasının içindeyim. Yazılım geliştirme, oyun yapımı, web tasarımı ve dijital içerik üretimi gibi birçok alanda aktifim. Hedefim; insanların işine yarayacak projeler üretmek ve bu alanda en iyilerden biri olmak.</p>
+</section>
 
-  <section id="contact">
-    <h2>İletişim</h2>
-    <p>Benimle iletişime geçmek için aşağıdaki bağlantıları kullanabilirsiniz:</p>
-    <ul>
-      <li><a href="mailto:enesakdoganiletisim@gmail.com">E-posta</a></li>
-      <li><a href="https://www.instagram.com/en3sdev" target="_blank">Instagram</a></li>
-      <li><a href="https://en3sdev.itch.io" target="_blank">itch.io</a></li>
-    </ul>
-  </section>
+<section id="yetenekler">
+  <h2>Yetenekler</h2>
+  <ul>
+    <li><span class="highlight">HTML & CSS:</span> Web sayfaları tasarlama ve modern kullanıcı arayüzleri oluşturma</li>
+    <li><span class="highlight">JavaScript:</span> Dinamik web özellikleri ve etkileşimli içerikler</li>
+    <li><span class="highlight">Python:</span> Otomasyon, veri analizi ve bot geliştirme</li>
+    <li><span class="highlight">Unity & C#:</span> 2D/3D oyun geliştirme tecrübesi</li>
+    <li><span class="highlight">Blender:</span> 3D modelleme ve oyun içeriği üretimi</li>
+    <li><span class="highlight">Photoshop & CapCut:</span> Grafik tasarımı ve video düzenleme</li>
+    <li><span class="highlight">Notion:</span> Proje planlama ve üretkenlik sistemleri oluşturma</li>
+    <li><span class="highlight">API & Web Scraping:</span> Veri çekme ve API bağlantıları kurma</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Enes Akdoğan | Tüm Hakları Saklıdır</p>
-  </footer>
+<section id="projeler">
+  <h2>Projeler</h2>
+  <ul>
+    <li>
+      <strong>Çok Oyunculu Online Oyun:</strong> Web tabanlı, çok oyunculu bir oyun geliştirdim. Bu projede oyuncular bir araya gelip birlikte görevler yapabiliyor. 
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Çok+Oyunculu+Oyun+Görseli" alt="Çok Oyunculu Online Oyun" class="project-image">
+    </li>
+    <li>
+      <strong>Gelişmiş Web Sitesi:</strong> HTML, CSS, JavaScript kullanarak tamamen responsive bir portföy sitesi oluşturduk.
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Gelişmiş+Web+Sitesi+Görseli" alt="Gelişmiş Web Sitesi" class="project-image">
+    </li>
+    <li>
+      <strong>Python İle Veri Analizi:</strong> Birçok veriyi Python ile işleyip görselleştiren bir veri analiz projesi yaptım.
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Python+Veri+Analizi+Görseli" alt="Python Veri Analizi" class="project-image">
+    </li>
+    <li>
+      <strong>Blender 3D Modelleme Projesi:</strong> Blender ile oyun karakterleri modelledim ve Unity’de kullanmaya başladım.
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Blender+3D+Modelleme+Görseli" alt="Blender 3D Modelleme" class="project-image">
+    </li>
+    <li>
+      <strong>Notion Dashboard:</strong> Notion kullanarak projelerimi, günlük işlerimi ve hayatımı organize ettiğim bir dashboard tasarladım.
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Notion+Dashboard+Görseli" alt="Notion Dashboard" class="project-image">
+    </li>
+    <li>
+      <strong>Unity FPS Oyun Projesi:</strong> Unity ile basit bir FPS (First Person Shooter) oyun prototipi geliştirdim.
+      <img src="https://via.placeholder.com/900x400/ff5722/ffffff?text=Unity+FPS+Oyun+Görseli" alt="Unity FPS Oyun" class="project-image">
+    </li>
+  </ul>
+</section>
 
-  <script src="script.js"></script>
+<section id="iletisim">
+  <h2>İletişim</h2>
+  <div class="social">
+    <a href="https://www.instagram.com/en3sdev" target="_blank">Instagram</a>
+    <a href="mailto:enesakdoganiletisim@gmail.com">Mail Gönder</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Enes Akdoğan | Tüm Hakları Saklıdır
+</footer>
+
 </body>
 </html>
