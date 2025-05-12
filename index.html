@@ -1,209 +1,76 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Enes Akdoğan - Kişisel Web Sitesi</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap');
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-    
-    :root {
-      --bg: #0f172a;
-      --text: #f1f5f9;
-      --accent: #38bdf8;
-      --card: #1e293b;
-      --highlight: #0ea5e9;
-      --border: #2a2a2a;
-    }
-
-    body.light {
-      --bg: #f8fafc;
-      --text: #1e293b;
-      --accent: #0ea5e9;
-      --card: #e2e8f0;
-      --highlight: #38bdf8;
-      --border: #ccc;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      transition: all 0.3s ease;
-    }
-
-    header {
-      background: var(--card);
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 3px solid var(--highlight);
-      position: relative;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: var(--highlight);
-    }
-
-    header p {
-      font-size: 18px;
-      color: var(--text);
-    }
-
-    #mode-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: transparent;
-      border: 2px solid var(--highlight);
-      color: var(--highlight);
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    #mode-toggle:hover {
-      background-color: var(--highlight);
-      color: var(--bg);
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: var(--highlight);
-      border-bottom: 2px solid var(--highlight);
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li::before {
-      content: "➤ ";
-      color: var(--highlight);
-    }
-
-    .social {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .social a {
-      color: var(--highlight);
-      text-decoration: none;
-      margin-right: 20px;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-
-    .social a:hover {
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: var(--card);
-      font-size: 14px;
-      color: var(--text);
-      border-top: 1px solid var(--highlight);
-      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .project-img {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px 0;
-      border-radius: 8px;
-    }
-
-    .skills-icons i {
-      font-size: 40px;
-      margin: 10px;
-      color: var(--highlight);
-    }
-
-    .skills-icons i:hover {
-      color: var(--accent);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enes Akdoğan - Portföy</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#skills">Yetenekler</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+    <h1>Enes Akdoğan</h1>
+    <p>Yazılım Geliştirici • Oyun Tasarımcısı • Dijital İçerik Üreticisi</p>
+  </header>
 
-<header>
-  <button id="mode-toggle">🌙 Gece</button>
-  <h1>Enes Akdoğan</h1>
-  <p>Freelance • Oyun Geliştirici • YouTuber Adayı</p>
-</header>
+  <section id="about">
+    <h2>Hakkımda</h2>
+    <p>Ben Enes. 15 yaşındayım ve teknolojiye olan ilgim çok büyük. Yazılım, oyun geliştirme ve dijital içerik üretme gibi alanlarda kendimi geliştirmek istiyorum. Amacım projelerimi dünyaya tanıtarak insanlara faydalı işler ortaya koymak ve sektördeki en iyilerden biri olmak.</p>
+  </section>
 
-<section>
-  <h2>Hakkımda</h2>
-  <p>Ben Enes. 15 yaşındayım ve yazılım, oyun geliştirme, içerik üretme gibi dijital dünyalara ilgim var. Kendi projelerimi yapıyorum, gelecekte iş almak ve adımı duyurmak istiyorum. Her gün yeni şeyler öğrenerek geliştirdiğim becerilerle dijital dünyada iz bırakmak istiyorum.</p>
+  <section id="skills">
+    <h2>Yeteneklerim</h2>
+    <ul class="skills-list">
+      <li>✅ HTML & CSS (Web Tasarımı)</li>
+      <li>✅ JavaScript (Temel & Orta Seviye)</li>
+      <li>✅ Python (Yazılım Geliştirme & Veri İşleme)</li>
+      <li>✅ Unity & C# (Oyun Geliştirme)</li>
+      <li>✅ Blender (3D Modelleme)</li>
+      <li>✅ Photoshop / CapCut / Premiere Pro (Tasarım & Video)</li>
+      <li>✅ Firebase & SQL (Veritabanı Yönetimi)</li>
+      <li>✅ Web Scraping & API Kullanımı</li>
+    </ul>
+  </section>
 
-  <h2>Yetenekler</h2>
-  <div class="skills-icons">
-    <i class="fab fa-html5"></i>
-    <i class="fab fa-css3-alt"></i>
-    <i class="fab fa-python"></i>
-    <i class="fab fa-java"></i>
-    <i class="fab fa-unity"></i>
-  </div>
-  <ul>
-    <li>HTML, CSS (Temel Web Tasarım)</li>
-    <li>Python (Temel Seviye)</li>
-    <li>Video Düzenleme (CapCut, VN)</li>
-    <li>Notion ile Proje Yönetimi</li>
-    <li>Oyun Geliştirme (Unity, C#)</li>
-  </ul>
+  <section id="projects">
+    <h2>Projelerim</h2>
+    <div class="project">
+      <img src="https://img.itch.zone/aW1nLzE0NzYzOTYzLnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="The Arena RPG" />
+      <h3>The Arena RPG</h3>
+      <p>Roguelike tarzında, piksel sanat stiline sahip bir oyun. Şu anda geliştirme aşamasında ve dört oynanabilir karakter mevcut.</p>
+      <a href="https://en3sdev.itch.io/the-arena-rpg" target="_blank">Oyna</a>
+    </div>
+    <div class="project">
+      <img src="https://img.itch.zone/aW1nLzE0NzYzOTY0LnBuZw==/original/0%2Fz5%2Fz5z5z5.png" alt="ClickVilistaion" />
+      <h3>ClickVilistaion</h3>
+      <p>Strateji tabanlı bir tıklama oyunu. Kendi krallığınızı kurun ve yönetin.</p>
+      <a href="https://en3sdev.itch.io/clickvilistaion" target="_blank">Oyna</a>
+    </div>
+    <!-- Diğer projeler aynı formatta eklenebilir -->
+  </section>
 
-  <h2>Projeler</h2>
-  <ul>
-    <li>Kişisel Web Sitem</li>
-    <li>YouTube Kanal Tasarımı ve İçerik Planlaması</li>
-    <li>Mini 2D Oyun Prototipi</li>
-    <li>Hot Wheels Online Pazarı</li>
-  </ul>
-  <img src="https://via.placeholder.com/600x400?text=Mini+Oyun+Prototipi" alt="Proje Görseli" class="project-img">
+  <section id="contact">
+    <h2>İletişim</h2>
+    <p>Benimle iletişime geçmek için aşağıdaki bağlantıları kullanabilirsiniz:</p>
+    <ul>
+      <li><a href="mailto:enesakdoganiletisim@gmail.com">E-posta</a></li>
+      <li><a href="https://www.instagram.com/en3sdev" target="_blank">Instagram</a></li>
+      <li><a href="https://en3sdev.itch.io" target="_blank">itch.io</a></li>
+    </ul>
+  </section>
 
-  <h2>İletişim</h2>
-  <div class="social">
-    <a href="https://www.instagram.com/en3sdev" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    <a href="mailto:enes@ornekmail.com"><i class="fas fa-envelope"></i> Mail Gönder</a>
-  </div>
-</section>
+  <footer>
+    <p>&copy; 2025 Enes Akdoğan | Tüm Hakları Saklıdır</p>
+  </footer>
 
-<footer>
-  &copy; 2025 Enes Akdoğan | Tüm Hakları Saklıdır
-</footer>
-
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
-  const body = document.body;
-
-  toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('light');
-    toggleBtn.textContent = body.classList.contains('light') ? '🌞 Gündüz' : '🌙 Gece';
-  });
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
